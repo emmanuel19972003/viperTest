@@ -10,12 +10,19 @@
 		6726D69129A189590054892C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D69029A189590054892C /* AppDelegate.swift */; };
 		6726D69329A189590054892C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D69229A189590054892C /* SceneDelegate.swift */; };
 		6726D69529A189590054892C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D69429A189590054892C /* ViewController.swift */; };
-		6726D69829A189590054892C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6726D69629A189590054892C /* Main.storyboard */; };
 		6726D69A29A1895A0054892C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6726D69929A1895A0054892C /* Assets.xcassets */; };
 		6726D69D29A1895A0054892C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6726D69B29A1895A0054892C /* LaunchScreen.storyboard */; };
 		6726D6A829A1895A0054892C /* vipertestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6A729A1895A0054892C /* vipertestTests.swift */; };
 		6726D6B229A1895A0054892C /* vipertestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6B129A1895A0054892C /* vipertestUITests.swift */; };
 		6726D6B429A1895A0054892C /* vipertestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6B329A1895A0054892C /* vipertestUITestsLaunchTests.swift */; };
+		6726D6C829A1B4730054892C /* ListaDePeliculasPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6C729A1B4730054892C /* ListaDePeliculasPresenter.swift */; };
+		6726D6CA29A1B4B90054892C /* ListaDePeliculasIntereactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6C929A1B4B90054892C /* ListaDePeliculasIntereactor.swift */; };
+		6726D6CC29A1B4C90054892C /* ListaDePeliculasRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6CB29A1B4C90054892C /* ListaDePeliculasRouter.swift */; };
+		6726D6CE29A1BA120054892C /* PeliculasPopularesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6CD29A1BA120054892C /* PeliculasPopularesModel.swift */; };
+		6726D6D029A1BA3D0054892C /* PeliculasPopularesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6CF29A1BA3D0054892C /* PeliculasPopularesResponse.swift */; };
+		6726D6D229A1C06C0054892C /* ListaDepeliculasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6D129A1C06C0054892C /* ListaDepeliculasView.swift */; };
+		6726D6D429A1C8D30054892C /* caldaDePeliculas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6D329A1C8D30054892C /* caldaDePeliculas.swift */; };
+		6726D6D729A26DAC0054892C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6726D6D629A26DAC0054892C /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +47,6 @@
 		6726D69029A189590054892C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6726D69229A189590054892C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6726D69429A189590054892C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6726D69729A189590054892C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6726D69929A1895A0054892C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6726D69C29A1895A0054892C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6726D69E29A1895A0054892C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +55,13 @@
 		6726D6AD29A1895A0054892C /* vipertestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vipertestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6726D6B129A1895A0054892C /* vipertestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vipertestUITests.swift; sourceTree = "<group>"; };
 		6726D6B329A1895A0054892C /* vipertestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vipertestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6726D6C729A1B4730054892C /* ListaDePeliculasPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDePeliculasPresenter.swift; sourceTree = "<group>"; };
+		6726D6C929A1B4B90054892C /* ListaDePeliculasIntereactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDePeliculasIntereactor.swift; sourceTree = "<group>"; };
+		6726D6CB29A1B4C90054892C /* ListaDePeliculasRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDePeliculasRouter.swift; sourceTree = "<group>"; };
+		6726D6CD29A1BA120054892C /* PeliculasPopularesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasPopularesModel.swift; sourceTree = "<group>"; };
+		6726D6CF29A1BA3D0054892C /* PeliculasPopularesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasPopularesResponse.swift; sourceTree = "<group>"; };
+		6726D6D129A1C06C0054892C /* ListaDepeliculasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDepeliculasView.swift; sourceTree = "<group>"; };
+		6726D6D329A1C8D30054892C /* caldaDePeliculas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caldaDePeliculas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6726D6D729A26DAC0054892C /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +113,12 @@
 		6726D68F29A189590054892C /* vipertest */ = {
 			isa = PBXGroup;
 			children = (
+				6726D6C429A1AFFA0054892C /* listaDePeliculas */,
+				6726D6C329A1AFE70054892C /* endpoints */,
+				6726D6C029A1AFC50054892C /* Models */,
 				6726D69029A189590054892C /* AppDelegate.swift */,
 				6726D69229A189590054892C /* SceneDelegate.swift */,
 				6726D69429A189590054892C /* ViewController.swift */,
-				6726D69629A189590054892C /* Main.storyboard */,
 				6726D69929A1895A0054892C /* Assets.xcassets */,
 				6726D69B29A1895A0054892C /* LaunchScreen.storyboard */,
 				6726D69E29A1895A0054892C /* Info.plist */,
@@ -127,6 +143,34 @@
 			path = vipertestUITests;
 			sourceTree = "<group>";
 		};
+		6726D6C029A1AFC50054892C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6726D6CD29A1BA120054892C /* PeliculasPopularesModel.swift */,
+				6726D6CF29A1BA3D0054892C /* PeliculasPopularesResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6726D6C329A1AFE70054892C /* endpoints */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = endpoints;
+			sourceTree = "<group>";
+		};
+		6726D6C429A1AFFA0054892C /* listaDePeliculas */ = {
+			isa = PBXGroup;
+			children = (
+				6726D6D129A1C06C0054892C /* ListaDepeliculasView.swift */,
+				6726D6C729A1B4730054892C /* ListaDePeliculasPresenter.swift */,
+				6726D6C929A1B4B90054892C /* ListaDePeliculasIntereactor.swift */,
+				6726D6CB29A1B4C90054892C /* ListaDePeliculasRouter.swift */,
+				6726D6D329A1C8D30054892C /* caldaDePeliculas.swift */,
+			);
+			path = listaDePeliculas;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +187,9 @@
 			dependencies = (
 			);
 			name = vipertest;
+			packageProductDependencies = (
+				6726D6D629A26DAC0054892C /* Kingfisher */,
+			);
 			productName = vipertest;
 			productReference = 6726D68D29A189590054892C /* vipertest.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +262,9 @@
 				Base,
 			);
 			mainGroup = 6726D68429A189590054892C;
+			packageReferences = (
+				6726D6D529A26DAC0054892C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 6726D68E29A189590054892C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +283,6 @@
 			files = (
 				6726D69D29A1895A0054892C /* LaunchScreen.storyboard in Resources */,
 				6726D69A29A1895A0054892C /* Assets.xcassets in Resources */,
-				6726D69829A189590054892C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +308,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6726D69529A189590054892C /* ViewController.swift in Sources */,
+				6726D6CC29A1B4C90054892C /* ListaDePeliculasRouter.swift in Sources */,
+				6726D6CA29A1B4B90054892C /* ListaDePeliculasIntereactor.swift in Sources */,
+				6726D6C829A1B4730054892C /* ListaDePeliculasPresenter.swift in Sources */,
+				6726D6CE29A1BA120054892C /* PeliculasPopularesModel.swift in Sources */,
 				6726D69129A189590054892C /* AppDelegate.swift in Sources */,
+				6726D6D029A1BA3D0054892C /* PeliculasPopularesResponse.swift in Sources */,
 				6726D69329A189590054892C /* SceneDelegate.swift in Sources */,
+				6726D6D229A1C06C0054892C /* ListaDepeliculasView.swift in Sources */,
+				6726D6D429A1C8D30054892C /* caldaDePeliculas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6726D69629A189590054892C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6726D69729A189590054892C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6726D69B29A1895A0054892C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +490,6 @@
 				INFOPLIST_FILE = vipertest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +517,6 @@
 				INFOPLIST_FILE = vipertest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -602,6 +648,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6726D6D529A26DAC0054892C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6726D6D629A26DAC0054892C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6726D6D529A26DAC0054892C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6726D68529A189590054892C /* Project object */;
 }
