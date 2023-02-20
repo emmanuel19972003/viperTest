@@ -9,27 +9,29 @@ import Foundation
 import UIKit
 
 class ListaDepeliculasView: UIViewController {
-    private var peliculasTableView: UITableView = {
+    
+    var presenter: ListaDePeliculasPresenter?
+    
+    private let peliculasTableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.estimatedRowHeight = 120
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.register(caldaDePeliculas.self, forCellReuseIdentifier: "caldaDePeliculas")
+        tableView.register(CeldaDePeliculas.self, forCellReuseIdentifier: "celdaDePeliculas")
         return tableView
     }()
-    var presenter: ListaDePeliculasPresenter?
+    
     
     init(){
         super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
-        fatalError("paila")
+        fatalError("view did not load")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .blue
         setupTableView()
         presenter?.onViewAppear()
@@ -55,12 +57,11 @@ extension ListaDepeliculasView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "caldaDePeliculas", for: indexPath) as! caldaDePeliculas
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celdaDePeliculas", for: indexPath) as! CeldaDePeliculas
         cell.backgroundColor = .red
         let model = presenter!.models[indexPath.row]
-        
+        cell.setUpViews()
         cell.configuracion(pelicula: model)
-        
         return cell
     }
     

@@ -21,7 +21,7 @@
 		6726D6CE29A1BA120054892C /* PeliculasPopularesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6CD29A1BA120054892C /* PeliculasPopularesModel.swift */; };
 		6726D6D029A1BA3D0054892C /* PeliculasPopularesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6CF29A1BA3D0054892C /* PeliculasPopularesResponse.swift */; };
 		6726D6D229A1C06C0054892C /* ListaDepeliculasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6D129A1C06C0054892C /* ListaDepeliculasView.swift */; };
-		6726D6D429A1C8D30054892C /* caldaDePeliculas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6D329A1C8D30054892C /* caldaDePeliculas.swift */; };
+		6726D6D429A1C8D30054892C /* CeldaDePeliculas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6726D6D329A1C8D30054892C /* CeldaDePeliculas.swift */; };
 		6726D6D729A26DAC0054892C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6726D6D629A26DAC0054892C /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +61,7 @@
 		6726D6CD29A1BA120054892C /* PeliculasPopularesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasPopularesModel.swift; sourceTree = "<group>"; };
 		6726D6CF29A1BA3D0054892C /* PeliculasPopularesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeliculasPopularesResponse.swift; sourceTree = "<group>"; };
 		6726D6D129A1C06C0054892C /* ListaDepeliculasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaDepeliculasView.swift; sourceTree = "<group>"; };
-		6726D6D329A1C8D30054892C /* caldaDePeliculas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caldaDePeliculas.swift; sourceTree = "<group>"; };
+		6726D6D329A1C8D30054892C /* CeldaDePeliculas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaDePeliculas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +166,7 @@
 				6726D6C729A1B4730054892C /* ListaDePeliculasPresenter.swift */,
 				6726D6C929A1B4B90054892C /* ListaDePeliculasIntereactor.swift */,
 				6726D6CB29A1B4C90054892C /* ListaDePeliculasRouter.swift */,
-				6726D6D329A1C8D30054892C /* caldaDePeliculas.swift */,
+				6726D6D329A1C8D30054892C /* CeldaDePeliculas.swift */,
 			);
 			path = listaDePeliculas;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 				6726D6D029A1BA3D0054892C /* PeliculasPopularesResponse.swift in Sources */,
 				6726D69329A189590054892C /* SceneDelegate.swift in Sources */,
 				6726D6D229A1C06C0054892C /* ListaDepeliculasView.swift in Sources */,
-				6726D6D429A1C8D30054892C /* caldaDePeliculas.swift in Sources */,
+				6726D6D429A1C8D30054892C /* CeldaDePeliculas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,9 +10,9 @@ import UIKit
 
 class ListaDePeliculasRouter{
     func muestaListaDePeliculas(window: UIWindow?) {
-        let view = ListaDepeliculasView()
-        let interactor = ListaDePeliculasIntereactor()
-        let presenter = ListaDePeliculasPresenter(listaDePeliculasIntereactor: interactor)
+        let view = ListaDepeliculasView()//strong
+        let interactor = ListaDePeliculasIntereactor()//strong
+        let presenter = ListaDePeliculasPresenter(listaDePeliculasIntereactor: interactor)//strong
         presenter.ui = view
         view.presenter = presenter
         

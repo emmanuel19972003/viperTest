@@ -24,7 +24,6 @@ class ListaDePeliculasPresenter {
         Task{
             models = await listaDePeliculasIntereactor.getListaDePeliculas().results
             ui?.update(peliculas: models)
-            print("En model lista de peliculas \(models)")
         }
     }
 }

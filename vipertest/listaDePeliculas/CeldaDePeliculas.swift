@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import Kingfisher
 
-class caldaDePeliculas: UITableViewCell {
+class CeldaDePeliculas: UITableViewCell {
     let imagenDeLaPelicula: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
