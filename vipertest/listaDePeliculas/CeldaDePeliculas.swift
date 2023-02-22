@@ -53,18 +53,18 @@ class CeldaDePeliculas: UITableViewCell {
         NSLayoutConstraint.activate([
             imagenDeLaPelicula.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
             imagenDeLaPelicula.topAnchor.constraint(equalTo: topAnchor, constant: 12),
-            imagenDeLaPelicula.heightAnchor.constraint(equalTo: heightAnchor, constant: 200),
-            imagenDeLaPelicula.widthAnchor.constraint(equalTo: widthAnchor, constant: 100),
+            imagenDeLaPelicula.heightAnchor.constraint(equalToConstant: 200),
+            imagenDeLaPelicula.widthAnchor.constraint(equalToConstant: 100),
             imagenDeLaPelicula.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor, constant: -12),
             
             
-            movieName.leadingAnchor.constraint(equalTo: imagenDeLaPelicula.leadingAnchor, constant: 18),
+            movieName.leadingAnchor.constraint(equalTo: imagenDeLaPelicula.trailingAnchor, constant: 18),
             movieName.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
             movieName.topAnchor.constraint(equalTo: imagenDeLaPelicula.topAnchor, constant: 24),
             
-            movieDescription.leadingAnchor.constraint(equalTo: imagenDeLaPelicula.leadingAnchor, constant: 18),
+            movieDescription.leadingAnchor.constraint(equalTo: imagenDeLaPelicula.trailingAnchor, constant: 20),
             movieDescription.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
-            movieDescription.topAnchor.constraint(equalTo: movieName.topAnchor, constant: 24),
+            movieDescription.topAnchor.constraint(equalTo: movieName.bottomAnchor, constant: 8),
             movieDescription.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor, constant: -12),
 
         ])

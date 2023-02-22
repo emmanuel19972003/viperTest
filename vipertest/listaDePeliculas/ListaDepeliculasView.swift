@@ -58,7 +58,6 @@ extension ListaDepeliculasView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaDePeliculas", for: indexPath) as! CeldaDePeliculas
-        cell.backgroundColor = .red
         let model = presenter!.models[indexPath.row]
         cell.setUpViews()
         cell.configuracion(pelicula: model)
